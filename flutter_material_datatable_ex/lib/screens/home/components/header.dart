@@ -52,6 +52,10 @@ class ProfileCard extends StatelessWidget {
               child: Text("Angelina Joli"),
             ),
           PopupMenuButton(
+              // color: Colors.yellowAccent,
+              shape: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.grey),
+                  borderRadius: BorderRadius.all(Radius.circular(15))),
               icon: Icon(Icons.keyboard_arrow_down),
               itemBuilder: (BuildContext context) => <PopupMenuEntry>[
                     const PopupMenuItem(
@@ -59,7 +63,7 @@ class ProfileCard extends StatelessWidget {
                         //leading: Icon(Icons.add),
                         horizontalTitleGap: 0.0,
                         selected: false,
-                        title: Text('Item 1'),
+                        title: Text('Angelina Joli'),
                       ),
                     ),
                   ])
